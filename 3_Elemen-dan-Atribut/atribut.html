@@ -1,0 +1,86 @@
+<!--
+### CATATAN
+Semua elemen HTML dapat memiliki atribut
+href atribut <a> Menentukan URL halaman link pergi ke
+src atribut <img> menentukan path ke gambar yang akan ditampilkan
+width dan height atribut <img> memberikan informasi ukuran untuk gambar
+alt atribut <img> menyediakan teks alternatif untuk gambar
+style atribut digunakan untuk menambah gaya untuk elemen, seperti warna, font, ukuran, dan lebih banyakk lagi
+lang atribut dari <html> tag menyatakan bahasa halaman Web
+title atribut mendefinisikan beberapa informasi tambahan tentang elemen
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="shortcut icon" href="../img/nsc.png">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="keyword" content="Belajar HTML Dasar">
+		<meta name="description" content="Mempelajari HTML Dasar untuk pemula">
+		<meta name="author" content="I Komang Darsa">
+		<title>HTML Dasar - Atribut</title>
+</head>
+<body>
+
+	<a href="http://www.google.com" target="_self">Mesin Pencari Google</a>
+
+<!-- untuk paragraf rata tengah -->
+<p align="center">
+		Contoh teks ini akan berada ditengah
+</p>
+<!-- garis horizontal dengan panjang 50% dari lebar halaman body -->
+<hr width="50%">
+<!-- garis horizontal dengan panjang 50px dari lebar halaman body -->
+<hr width="50px">
+
+<img src="darsa.jpg" width="250" height="300">
+<!--
+###Atribut src
+Tag <img> digunakan untuk menanamkan gambar di halaman HTML. 
+Atribut src untuk menspesifikasikan atribut path ke gambar yang akan ditampilkan:
+tag <img> juga harus berisi width dan height atribut, yang menentukan lebar dan tinggi gambar (dalam pixel):
+-->
+
+<img src="komang.jpg" alt="saat tinggal dikorea selatan" width="200" height="200">
+<!--
+### Atribut alt
+Atribut Alt yang diperlukan untuk tag <img> menentukan teks alternatif untuk gambar, jika gambar karena alasan tertentu tidak dapat ditampilkan. Ini bisa disebabkan koneksi yang lambat, atau kesalahan pada atribut src, atau jika pengguna menggunakan pembaca layar.
+-->
+
+<p style="color:red;">Tulisan dalam paragraf ini akan berwarna merah.</p>
+
+<!--
+Atribut style
+Atribut style digunakan untuk menambah gaya untuk elemen, seperti warna, font, ukuran, dan banyak lagi.
+-->
+
+<p title="I'm a tooltip">Arahkan mouse ke paragraf ini, untuk menampilkan atribut judul sebagai tooltip.</p>
+
+<!--
+### Atribut title 
+Nilai atribut title akan ditampilkan sebagai tooltip ketika Anda mengarahkan mouse ke elemen:
+-->
+
+<p title='I komang "Nusesentalcoding" Darsa'>I Komang darsa dengan tanda kutip dua</p>
+<p title="I komang 'Nusesentalcoding' Darsa">I Komang Darsa dengan tanda kutip satu</p>
+
+<br>
+
+<p>Perbedaan Teks area dengan spellcheck <strong>true</strong> dan <strong>false</strong></p>
+<textarea >Click Me! I loooove you. spellcheck='true'
+</textarea>
+<textarea spellcheck="false">Click Me! I loooove you. spellcheck="false"
+</textarea>
+<p>
+Secara default, pada sebuah textarea browser akan mengecek ejaan tulisan. Jika salah, maka ditandai dengan warna garis merah bawah. pada textarea dengan spellcheck="false" artinya, jangan ditandai (garis merah bawah) meskipun salah ejaan.
+</p>
+<br>
+		<p>Paragraf ini tidak bisa diedit.</p>
+		
+<p contenteditable="true">Paragraf ini bisa diedit, silahkan klik disini!</p>
+<br>
+</body>
+</html>

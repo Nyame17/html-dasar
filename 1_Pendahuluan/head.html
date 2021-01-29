@@ -1,0 +1,49 @@
+<!--
+
+Elemen tag head HTML
+Tag			Description
+<head> 		Menentukan informasi tentang dokumen
+<title> 	Menentukan judul dokumen
+<base> 		Menentukan alamat default atau target default untuk semua tautan pada halaman
+<link> 		Menentukan hubungan antara dokumen dan sumber daya eksternal
+<meta> 		Menentukan metadata tentang dokumen HTML
+<script> 	Menentukan skrip sisi klien
+<style> 	Menentukan informasi gaya untuk dokumen
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="../img/nsc.png">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="keyword" content="Belajar HTML Dasar">
+	<meta name="description" content="Mempelajari HTML Dasar untuk pemula">
+	<meta name="author" content="I Komang Darsa">
+  <title>HTML Dasar - Tag Head</title>
+  <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Halo JavaScript!";
+    }
+  </script>
+  <!-- Tag <base> elemen menentukan URL dasar dan sasaran dasar untuk semua URL relatif dalam halaman -->
+  <base href="https://www.w3schools.com/images/" target="_blank">
+</head>
+<body>
+
+<h1>Halaman Website Nuse Sental Coding</h1>
+
+<p id="demo">Ini adalah contoh paragraf</p>
+<button type="button" onclick="myFunction()">Coba Klik</button>
+
+<img src="html5.gif">
+<p> Karena kami telah menetapkan URL dasar, browser akan mencari gambar "html5.gif" di website 
+  "https://www.w3schools.com/images/html5.gif" </p>
+
+<p>Link menuju ke website <a href="https://www.w3schools.com">W3Schools</a></p>
+<p> Link di atas akan terbuka di jendela baru. Ini karena target dasar diatur ke "_blank". </p>
+
+</body>
+</html>
