@@ -1,0 +1,297 @@
+<!-- 
+### Daftar HTML
+Daftar HTML yang Dipesan dan berurutan
+Daftar yang diurutkan dimulai dengan tag <ol>. 
+Setiap daftar item dimulai dengan tag <li>.
+Daftar yang dipesan dapat berupa angka atau abjad.
+
+Type	                    Description
+type = "1" Item daftar akan diberi nomor dengan angka (default)
+type = "A" Item daftar akan diberi nomor dengan huruf besar
+type = "a" Item daftar akan diberi nomor dengan huruf kecil
+type = "I" Item daftar akan diberi nomor dengan angka roman huruf besar
+type = "i" Item daftar akan diberi nomor dengan angka Romawi huruf kecil
+
+Catatan: Item daftar ( <li>) dapat berisi daftar baru, dan elemen HTML lainnya, seperti gambar dan tautan, dll.
+
+### Ringkasan Bab
+Gunakan <ol> elemen HTML untuk mendefinisikan daftar yang diurutkan
+Gunakan type atribut HTML untuk menentukan jenis penomoran
+Gunakan <li> elemen HTML untuk mendefinisikan item daftar
+Daftar dapat disarangkan
+Daftar item dapat berisi elemen HTML lainnya
+
+### Tag Daftar HTML
+
+<ul> Menentukan daftar tidak terurut
+<ol> Menentukan daftar yang dipesan berurutan
+<li> Menentukan item daftar
+<dl> Menentukan daftar deskripsi
+<dt> Menentukan istilah dalam daftar deskripsi
+<dd> Menjelaskan istilah dalam daftar deskripsi
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../img/nsc.png">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="keyword" content="Belajar HTML Dasar">
+        <meta name="description" content="Mempelajari HTML Dasar untuk pemula">
+        <meta name="author" content="I Komang Darsa">
+    <title>HTML Dasar - List</title>
+    <!-- dengan menambahkan style CSS -->
+    <style>
+      ul#tanda {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #020008;
+      }
+      
+      
+      .satu,.dua,.tiga,.empat, li  a  {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+        float: left;
+      }
+      
+      li a:hover {
+        background-color: #090df7;
+      }
+      </style>
+</head>
+<body>
+  <h1>Navigation Menu</h1>
+  <p>Dalam contoh ini, kami menggunakan CSS untuk menata daftar secara horizontal, untuk membuat menu navigasi:</p>
+  
+  <ul id="tanda">
+    <li class="satu"><a href="#home">Home</a></li>
+    <li class="dua"><a href="#news">News</a></li>
+    <li class="tiga"><a href="#contact">Contact</a></li>
+    <li class="empat"><a href="#about">About</a></li>
+  </ul>
+
+<h1>OL (Ordered List)</h1>
+<!-- Tag OL dengan nilai 1, A, a, I dan i terurut -->
+<h2>Daftar dengan huruf kecil</h2>
+
+<ol type="a">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol> 
+<br>
+<hr />
+
+<h2>Daftar dengan Romawi huruf besar</h2>
+
+<ol type="I">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>  
+<br>
+
+<ol type="A">
+	<li>Bangun Pagi</li>
+	<li>Sarapan</li>
+	<li>Tidur Lagi</li>
+	<li>Nonton TV</li>
+</ol>
+<br>
+<hr />
+
+<h2>Daftar dengan Romawi huruf kecil</h2>
+
+<ol type="i">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol> 
+
+<hr />
+
+<h2>Awal Nilai dapat ditentukan</h2>
+<p>Secara default, daftar yang dipesan akan mulai dihitung dari 1. Gunakan atribut mulai untuk mulai menghitung dari nomor yang ditentukan:</p>
+
+<ol start="50">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<ol type="I" start="50">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+<ol>
+	<li>Bangun Pagi</li>
+	<li>Mandi</li>
+	<li>Sarapan</li>
+	<li>Berangkat Kerja</li>
+</ol>
+
+<hr>
+
+<h1>UL (Unordered List)</h1>
+<!-- 
+Tag UL (Unordered List) untuk membuat list tanpa berurutan 
+secara default tag ul akan mengidentifikasikan dalam bentuk disc atau lingkaran hitam
+-->
+<p>Tag UL (Unordered List) untuk membuat list tanpa berurutan, secara default tag ul akan mengidentifikasikan dalam bentuk disc atau lingkaran hitam</p>
+<h3>Saat Sarapan, Saya Akan Makan</h3>
+<ul>
+	<li>Nasi Goreng</li>
+	<li>Mie Goreng</li>
+	<li>Telur Dadar</li>
+</ul>
+<hr>
+<!-- 
+Tag UL ada 3 macam yaitu  
+disc(bulatan hitam), 
+square(kotak hitam) dan 
+circle(lingkaran)
+-->
+<h3>Tag UL dengan Tipe Disc yaitu bentuk lingkaran hitam</h3>
+<h3>Saat Sarapan, Saya Akan Makan</h3>
+<ul type="disc">
+	<li>Nasi Goreng</li>
+	<li>Mie Goreng</li>
+	<li>Telur Dadar</li>
+</ul>
+<br>
+<ul style="list-style-type:disc;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<h3>Tag UL dengan Tipe Square yaitu bentuk kotak hitam</h3>
+<h3>Saat Sarapan, Saya Akan Makan</h3>
+<ul type="square">
+	<li>Nasi Goreng</li>
+	<li>Mie Goreng</li>
+	<li>Telur Dadar</li>
+</ul>
+<br>
+<ul style="list-style-type:square;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+<h3>Tag UL dengan Tipe Square yaitu bentuk lingkaran lubang tengah</h3>
+<h3>Saat Sarapan, Saya Akan Makan</h3>
+<ul type="circle">
+	<li>Nasi Goreng</li>
+	<li>Mie Goreng</li>
+	<li>Telur Dadar</li>
+</ul>
+<hr>
+<ul style="list-style-type:circle;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul> 
+
+<!-- 
+Tag DL (Definition List)
+didalam tag dl ada tag dt(definition terminologi) dan tag dd(definition deskripsi)
+-->
+<h3>Pemrograman Web dengan HTML</h3>
+<dl>
+<dt>HTML</dt>
+<dd>HyperText Markup Language</dd>
+<dt>CSS</dt>
+<dd>Cascading Style Sheet</dd>
+
+<h2>Daftar Bersarang dengan Angka</h2>
+<p>Daftar dapat disarangkan (daftar di dalam daftar):</p>
+
+<ol>
+  <li>Coffee</li>
+  <li>Tea
+    <ol>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ol>
+  </li>
+  <li>Milk</li>
+</ol>
+
+  <h2>Daftar Bersarang dengan Abjad</h2>
+<p>Daftar dapat disarangkan (daftar di dalam daftar):</p>
+
+<ol type="A">
+  <li>Coffee</li>
+  <li>Tea
+    <ol type="a">
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ol>
+  </li>
+  <li>Milk</li>
+    <ol type="a">
+      <li>Susu Putih</li>
+      <li>Susu Coklat</li>
+      <li>Susu Murni</li>
+    </ol>
+</ol>
+<h2>Daftar dengan huruf besar</h2>
+
+<ol type="A">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+<hr />
+
+<h2>Yang harus dilakukan hari ini</h2> 
+  <ol> 
+    <li>Pergi ke pasar 
+      <ul> 
+        <li>Beli sayuran</li> 
+        <li>Beli kertas 
+                      <ol> 
+                          <li>A4</li> 
+            <li>Legal</li> 
+          </ol> 
+        </li> 
+        <li>Beli tinta</li> 
+      </ul> 
+      </li> 
+      <li>Buat tutorial HTML</li> 
+      <li>Mengerjakan tugas kuliah</li> 
+  </ol> 
+
+<!-- Contoh Penulisan daftar List -->
+<h3>Contoh Penggunaan dl(Daftar List)</h3>
+<dl>
+  <dt>Daftar Menu Ikan</dt>
+  <dd>Ikan Salmon</dd>
+  <dd>Ikan Gurami</dd>
+  <dd>Ikan Bawal</dd>
+  <dd>Ikan Bandeng</dd>
+  <dd>Ikan Gabus</dd> <br>
+  <dt>Daftar Minuman</dt>
+  <dd>Juice Lemon</dd>
+  <dd>Juice Apple</dd>
+  <dd>Orange Juice</dd>
+  <dd>Juice Mango</dd>
+</dl>
+<br>
+<hr>
+
+ 
+  
+</body>
+</html>
